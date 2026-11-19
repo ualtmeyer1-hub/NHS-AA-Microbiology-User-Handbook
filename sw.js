@@ -1,6 +1,5 @@
 // NHS Ayrshire & Arran Microbiology Test Directory Service Worker (PDM-ATH020-WEB)
-// Bump CACHE_VERSION whenever index.html or UI assets change.
-const CACHE_VERSION = 'nhs-aa-micro-v1.0.0';
+const CACHE_VERSION = 'nhs-aa-micro-v1.1.0';
 const APP_SHELL = [
   './',
   './index.html',
@@ -34,8 +33,6 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // Strategy 1: Network-First for tests.json so QMS updates propagate immediately when online,
-  // falling back seamlessly to cached tests.json when offline (e.g., hospital basement/wards).
   if (url.pathname.endsWith('tests.json')) {
     event.respondWith(
       fetch(event.request)
@@ -51,7 +48,6 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Strategy 2: Cache-First with background refresh for app shell assets
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((cachedResp) => {
       const fetchPromise = fetch(event.request)
