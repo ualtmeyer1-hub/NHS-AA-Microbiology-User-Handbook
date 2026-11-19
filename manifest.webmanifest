@@ -1,0 +1,25 @@
+{
+  "name": "NHS A&A Microbiology Test Directory",
+  "short_name": "Microbiology A&A",
+  "description": "NHS Ayrshire & Arran Microbiology User Handbook & Requesting Guide (PDM-ATH020-WEB)",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F0F4F5",
+  "theme_color": "#003087",
+  "icons": [
+    {
+      "src": "./icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

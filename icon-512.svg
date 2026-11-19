@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#003087"/>
+  <rect x="24" y="24" width="464" height="464" rx="76" fill="none" stroke="#00A9CE" stroke-width="12"/>
+  <rect x="86" y="108" width="340" height="96" rx="12" fill="#FFFFFF"/>
+  <text x="256" y="176" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="68" fill="#005EB8" text-anchor="middle" letter-spacing="4">NHS</text>
+  <text x="256" y="274" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="40" fill="#FFFFFF" text-anchor="middle">Ayrshire &amp; Arran</text>
+  <text x="256" y="336" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="44" fill="#00A9CE" text-anchor="middle">MICROBIOLOGY</text>
+  <text x="256" y="392" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="28" fill="#D9E8F5" text-anchor="middle">Test Directory &amp; Guide</text>
+</svg>
